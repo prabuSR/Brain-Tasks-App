@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: brain-static-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: brain-static
+  template:
+    metadata:
+      labels:
+        app: brain-static
+    spec:
+      containers:
+        - name: brain-static
+          image: 736296213120.dkr.ecr.ap-south-1.amazonaws.com/brain-static:latest
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
