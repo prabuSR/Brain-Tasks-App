@@ -115,7 +115,7 @@ Available via kubectl logs
 Can be forwarded to CloudWatch using Fluent Bit
 
 🧪 How to Test CI/CD Pipeline
-Edit index.html and add a new "<h1> tag".
+Edit index.html and add a new "h1 tag".
 
 Commit and push the changes:
 git add .
